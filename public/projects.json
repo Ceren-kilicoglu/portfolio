@@ -10,7 +10,7 @@
                 ],
                 "viewSite": "https://fsweb-s8-challenge-pizza-jet.vercel.app/",
                 "github": "https://github.com/Ceren-kilicoglu/fsweb-s8-challenge-pizza",
-                "image": "./src/img/piz.jpeg"
+                "image": "/img/piz.jpeg"
             },
             {
                 "title": "Witflix Project",
@@ -21,7 +21,7 @@
                 ],
                 "viewSite": "https://wit-flix-1024.vercel.app/",
                 "github": "https://github.com/Ceren-kilicoglu/WitFlix-1024",
-                "image": "./src/img/witflix.jpeg"
+                "image": "/img/witflix.jpeg"
             }
         ]
     },
@@ -36,7 +36,7 @@
                 ],
                 "viewSite": "https://fsweb-s8-challenge-pizza-jet.vercel.app/",
                 "github": "https://github.com/Ceren-kilicoglu/fsweb-s8-challenge-pizza",
-                "image": "./src/img/piz.jpeg"
+                "image": "/img/piz.jpeg"
             },
             {
                 "title": "Witflix Projesi",
@@ -47,7 +47,7 @@
                 ],
                 "viewSite": "https://wit-flix-1024.vercel.app/",
                 "github": "https://github.com/Ceren-kilicoglu/WitFlix-1024",
-                "image": "./src/img/witflix.jpeg"
+                "image": "/img/witflix.jpeg"
             }
         ]
     }
