@@ -1,0 +1,48 @@
+{
+    "en": {
+        "profile": {
+            "title": "Profile",
+            "subtitle": "Basic Information",
+            "details": {
+                "birth": "25.02.1998",
+                "residence": "Antalya",
+                "education": "Akdeniz University, Germanistic, 2024",
+                "preferredRole": "Frontend, UI"
+            },
+            "labels": {
+                "birth": "Birth",
+                "residence": "Residence City",
+                "education": "Education",
+                "preferredRole": "Preferred Role"
+            }
+        },
+        "aboutMe": {
+            "title": "About Me",
+            "description": "I am a frontend developer focused on building responsive, intuitive, and visually appealing web interfaces. I enjoy turning creative ideas into functional and user-friendly digital experiences."
+        },
+        "image": "https://s3-alpha-sig.figma.com/img/ec36/93fd/2fc15cffc612b2448fb1f38e4c8c72fd?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lMpxhOHh~QaWLEokwuvZkAD4SCOU0RRkHKFjySjLzbVEAk6U0vcYbFUA7QCjvyIBnoKUECjjbHIEYpeKdpevvOj3bYkp2EZTQQvarPvx3Be3r7u4GtJO~XsTNSinpz6tp-W8Zxq9nBxJTNn5FWwuOBMhjJmfcR3c01AsR0~e3rmCn4hVvBE5fhgy0oRWML9ZNZo0Zu~OpVm5Yxlav-nP6Nx30CZB8WRXQ-DhYxGOZplbHXb49WSynuD4jggmKGxEy~PY-vojdrvopdqxBDlUzQuskUcSXxQlJDz4vgrei2oOL94zeKR32dVXZ6kZePY2CgS4WeYdNZUjxurOflvM~Q__"
+    },
+    "tr": {
+        "profile": {
+            "title": "Profil",
+            "subtitle": "Bilgiler",
+            "details": {
+                "birth": "25.02.1998",
+                "residence": "Antalya",
+                "education": "Akdeniz Üniversitesi, Germanistik, 2024",
+                "preferredRole": "Frontend, UI"
+            },
+            "labels": {
+                "birth": "Doğum Tarihi",
+                "residence": "İkametgah",
+                "education": "Eğitim ",
+                "preferredRole": "Tercih Edilen Rol"
+            }
+        },
+        "aboutMe": {
+            "title": "Hakkımda",
+            "description": "Ben, duyarlı, kullanıcı dostu ve görsel açıdan çekici web arayüzleri oluşturmayı odaklanan bir frontend geliştiricisiyim. Yaratıcı fikirleri fonksiyonel dijital deneyimlere dönüştürmekten keyif alıyorum."
+        },
+        "image": "https://s3-alpha-sig.figma.com/img/ec36/93fd/2fc15cffc612b2448fb1f38e4c8c72fd?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lMpxhOHh~QaWLEokwuvZkAD4SCOU0RRkHKFjySjLzbVEAk6U0vcYbFUA7QCjvyIBnoKUECjjbHIEYpeKdpevvOj3bYkp2EZTQQvarPvx3Be3r7u4GtJO~XsTNSinpz6tp-W8Zxq9nBxJTNn5FWwuOBMhjJmfcR3c01AsR0~e3rmCn4hVvBE5fhgy0oRWML9ZNZo0Zu~OpVm5Yxlav-nP6Nx30CZB8WRXQ-DhYxGOZplbHXb49WSynuD4jggmKGxEy~PY-vojdrvopdqxBDlUzQuskUcSXxQlJDz4vgrei2oOL94zeKR32dVXZ6kZePY2CgS4WeYdNZUjxurOflvM~Q__"
+    }
+}

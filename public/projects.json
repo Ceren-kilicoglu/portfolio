@@ -1,0 +1,54 @@
+{
+    "en": {
+        "h1": "Projects",
+        "projects": [
+            {
+                "title": "Pizza Project",
+                "description": "In the second month of my Frontend Developer course, I developed a Pizza Ordering Application using React. In this project, users can select pizzas from the menu and customize their size and ingredients. The project helped me learn and practice the fundamental building blocks of React (state, props, component structure) and allowed me to design a modern, user-friendly interface.",
+                "tags": [
+                    "react"
+                ],
+                "viewSite": "https://fsweb-s8-challenge-pizza-jet.vercel.app/",
+                "github": "https://github.com/Ceren-kilicoglu/fsweb-s8-challenge-pizza",
+                "image": "./src/img/piz.jpeg"
+            },
+            {
+                "title": "Witflix Project",
+                "description": "In the first month of my Frontend Developer course, I developed a project called Witflix using HTML and CSS. This project aimed to create a basic design inspired by the Netflix interface. Through this, I learned to structure web pages with HTML and style them with CSS, practicing fundamental web design principles.",
+                "tags": [
+                    "html",
+                    "css"
+                ],
+                "viewSite": "https://wit-flix-1024.vercel.app/",
+                "github": "https://github.com/Ceren-kilicoglu/WitFlix-1024",
+                "image": "./src/img/witflix.jpeg"
+            }
+        ]
+    },
+    "tr": {
+        "h1": "Projeler",
+        "projects": [
+            {
+                "title": "Pizza Projesi",
+                "description": "Frontend Developer kursumun 2. ayında, React kullanarak bir Pizza Sipariş Uygulaması geliştirdim. Bu projede kullanıcılar, menüden pizza seçip boyut ve malzemeleri özelleştirebiliyor. Proje, React'in temel yapı taşlarını (state, props, component yapısı) öğrenip pratik etmemi sağladı ve modern, kullanıcı dostu bir arayüz tasarlamama olanak tanıdı.",
+                "tags": [
+                    "react"
+                ],
+                "viewSite": "https://fsweb-s8-challenge-pizza-jet.vercel.app/",
+                "github": "https://github.com/Ceren-kilicoglu/fsweb-s8-challenge-pizza",
+                "image": "./src/img/piz.jpeg"
+            },
+            {
+                "title": "Witflix Projesi",
+                "description": "Frontend Developer kursumun 1. ayında HTML ve CSS ile Witflix adında bir proje geliştirdim. Bu proje, Netflix arayüzünü temel alarak bir tasarım oluşturmayı hedefliyordu. Çalışma sırasında HTML yapısını kurmayı ve CSS ile stil vermeyi öğrenerek, temel web tasarım prensiplerini pratik ettim.",
+                "tags": [
+                    "html",
+                    "css"
+                ],
+                "viewSite": "https://wit-flix-1024.vercel.app/",
+                "github": "https://github.com/Ceren-kilicoglu/WitFlix-1024",
+                "image": "./src/img/witflix.jpeg"
+            }
+        ]
+    }
+}

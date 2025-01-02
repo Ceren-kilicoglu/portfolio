@@ -1,0 +1,36 @@
+{
+    "en": {
+        "heading": "Send me a message!",
+        "prompt": "Got a question or proposal, or just want to say hello? Go ahead.",
+        "email": "cern.yaa@gmail.com",
+        "socialIcons": [
+            {
+                "name": "Twitter",
+                "icon": "faTwitter",
+                "link": "https://twitter.com/username"
+            },
+            {
+                "name": "Instagram",
+                "icon": "faInstagram",
+                "link": "https://instagram.com/username"
+            }
+        ]
+    },
+    "tr": {
+        "heading": "Bana Mesaj Gönder!",
+        "prompt": "Bir sorunuz, teklifiniz mi var ya da sadece merhaba demek mi istiyorsunuz? Yazabilirsiniz.",
+        "email": "cern.yaa@gmail.com",
+        "socialIcons": [
+            {
+                "name": "Twitter",
+                "icon": "faTwitter",
+                "link": "https://twitter.com/username"
+            },
+            {
+                "name": "Instagram",
+                "icon": "faInstagram",
+                "link": "https://instagram.com/username"
+            }
+        ]
+    }
+}
