@@ -47,20 +47,28 @@ const Footer = () => {
     };
 
     return (
-        <div className='w-[1519px] h-[454px] bg-[#F9F9F9] dark:bg-[#252128] relative overflow-hidden'>
-            <div className='w-[483px] h-[290px] absolute left-[550px] top-[80px] flex flex-col gap-[24px]'>
-                <h1 className='font-bold text-[48px] leading-[72px] text-[#4731D3] dark:text-[#8F88FF] '>{heading}</h1>
-                <p className='w-[448px] font-normal text-[24px] text-[#120B39] dark:text-whit text-center'>{prompt}</p>
-                <p className='w-auto font-medium text-[20px] leading-[24.2px] underline text-[#4731D3] dark:text-[#8F88FF] ml-[125px]'>{email}</p>
-                <div className='flex gap-[15px] ml-[175px]'>
+        <div className='w-full max-w-[1519px] h-[454px] bg-[#F9F9F9] dark:bg-[#252128] relative overflow-hidden'>
+            <div className='w-full max-w-[483px] h-[290px] absolute left-1/2 transform -translate-x-1/2 top-[80px] flex flex-col gap-[24px]'>
+                <h1 className='font-bold text-[36px] sm:text-[48px] leading-[52px] sm:leading-[72px] text-[#4731D3] dark:text-[#8F88FF]'>
+                    {heading}
+                </h1>
+                <p className='w-full max-w-[448px] font-normal text-[18px] sm:text-[24px] text-[#120B39] dark:text-whit text-center'>
+                    {prompt}
+                </p>
+                <p className='w-auto font-medium text-[16px] sm:text-[20px] leading-[24.2px] underline text-[#4731D3] dark:text-[#8F88FF] ml-0 sm:ml-[125px]'>
+                    {email}
+                </p>
+                <div className='flex gap-[10px] sm:gap-[15px] justify-center sm:justify-center sm:ml-[175px]'>
                     {socialIcons.map((icon, index) => (
-                        <a key={index} href={icon.link} target='_blank' rel='noopener noreferrer' className=' w-[35px] h-[35px] text-[#4731D3] dark:text-[#8F88FF] '>
+                        <a key={index} href={icon.link} target='_blank' rel='noopener noreferrer' className='w-[30px] h-[30px] sm:w-[35px] sm:h-[35px] text-[#4731D3] dark:text-[#8F88FF]'>
                             <FontAwesomeIcon icon={iconMap[icon.icon]} />
                         </a>
                     ))}
                 </div>
             </div>
         </div>
+
+
     );
 };
 
