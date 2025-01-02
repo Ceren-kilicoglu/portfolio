@@ -1,12 +1,23 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useReducer } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { useLanguage } from '../contexts/LanguageContext';
 
+// Reducer Fonksiyonu
+const footerDataReducer = (state, action) => {
+    switch (action.type) {
+        case 'SET_FOOTER_DATA':
+            return { ...state, contactData: action.payload };
+        default:
+            return state;
+    }
+};
 
 const Footer = () => {
-    const [contactData, setContactData] = useState(null);
     const { language } = useLanguage();
+
+    // useReducer ile state ve dispatch'i tanımlıyoruz
+    const [state, dispatch] = useReducer(footerDataReducer, { contactData: null });
 
     useEffect(() => {
         fetch("/footer.json")
@@ -18,22 +29,22 @@ const Footer = () => {
             })
             .then((data) => {
                 console.log("Data fetched successfully:", data);
-                setContactData(data[language]);
+                dispatch({ type: 'SET_FOOTER_DATA', payload: data[language] });
             })
             .catch((error) => console.error("Error fetching footer data:", error));
     }, [language]);
 
-    if (!contactData) {
-        return
+    // Eğer veriler henüz gelmediyse, component henüz render edilmez
+    if (!state.contactData) {
+        return null;
     }
 
-    const { heading, prompt, email, socialIcons } = contactData;
+    const { heading, prompt, email, socialIcons } = state.contactData;
 
     const iconMap = {
         faTwitter,
         faInstagram
     };
-
 
     return (
         <div className='w-[1519px] h-[454px] bg-[#F9F9F9] dark:bg-[#252128] relative overflow-hidden'>
@@ -51,8 +62,6 @@ const Footer = () => {
             </div>
         </div>
     );
-
-
 };
 
 export default Footer;

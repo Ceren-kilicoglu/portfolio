@@ -1,13 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useReducer, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { useDarkMode } from "../contexts/DarkModeContext";
 import { useLanguage } from "../contexts/LanguageContext";
+import heroDataReducer from "../reducers/heroDataReducer";
+
 
 const Hero = () => {
   const { darkMode, toggleDarkMode } = useDarkMode();
   const { language, toggleLanguage } = useLanguage();
-  const [heroData, setHeroData] = useState(null);
+
+  // useReducer kullanarak state yönetimi
+  const [state, dispatch] = useReducer(heroDataReducer, { data: null });
 
   useEffect(() => {
     fetch("/hero.json")
@@ -19,16 +23,16 @@ const Hero = () => {
       })
       .then((data) => {
         console.log("Data fetched successfully:", data);
-        setHeroData(data[language]);
+        dispatch({ type: "SET_HERO_DATA", payload: data[language] });
       })
       .catch((error) => console.error("Error fetching hero data:", error));
   }, [language]);
 
-  if (!heroData) {
-    return
+  if (!state.data) {
+    return <div>Loading...</div>;
   }
 
-  const { profile, buttons, darkModeToggle } = heroData;
+  const { profile, buttons, darkModeToggle } = state.data;
 
   return (
     <div className="hero-container flex overflow-hidden">
@@ -78,12 +82,12 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="green-container h-[671px] w-[710px] left-[1008px] bg-yellw dark:bg-d-bg   ">
+      <div className="green-container h-[671px] w-[710px] left-[1008px] bg-yellw dark:bg-d-bg">
         <div className="flex ">
-          {/* Language  Button */}
+          {/* Language Button */}
           <button
             onClick={toggleLanguage}
-            className="language-toggle w-fit  border-none cursor-pointer absolute left-[890px] top-[35px] font-semibold text-[15px] leading-[18.15px]"
+            className="language-toggle w-fit border-none cursor-pointer absolute left-[890px] top-[35px] font-semibold text-[15px] leading-[18.15px]"
           >
             {language === "en" ? (
               <span>
@@ -121,15 +125,13 @@ const Hero = () => {
               onClick={toggleDarkMode}
             >
               <div
-                className={`theme-indicator w-4 h-4 bg-[#FFE86E] dark:[#FFE86E] rounded-full transition-transform duration-300 ease-in-out transform ${darkMode ? "translate-x-0 rotate-[180deg]" : "translate-x-[31px] rotate-0"
-                  }`}
+                className={`theme-indicator w-4 h-4 bg-[#FFE86E] dark:[#FFE86E] rounded-full transition-transform duration-300 ease-in-out transform ${darkMode ? "translate-x-0 rotate-[180deg]" : "translate-x-[31px] rotate-0"}`}
               ></div>
             </button>
             <p className="text-[#4731D3] dark:text-[#D9D9D9] font-semibold text-[15px] leading-[18.15px]">
               {darkMode ? "LIGHT MODE" : darkModeToggle.text}
             </p>
           </div>
-
         </div>
       </div>
     </div>
@@ -137,4 +139,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

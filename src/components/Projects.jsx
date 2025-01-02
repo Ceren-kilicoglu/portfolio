@@ -1,9 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useReducer, useEffect } from "react";
 import { useLanguage } from '../contexts/LanguageContext';
+import projectsDataReducer from "../reducers/projectsDataReducer";
+
 
 const Projects = () => {
-    const [projectsData, setProjectsData] = useState(null);
     const { language } = useLanguage();
+
+    // useReducer ile state yönetimi
+    const [state, dispatch] = useReducer(projectsDataReducer, { projectsData: null });
 
     useEffect(() => {
         fetch("/projects.json")
@@ -15,22 +19,22 @@ const Projects = () => {
             })
             .then((data) => {
                 console.log("Data fetched successfully:", data);
-                setProjectsData(data[language]);
+                dispatch({ type: "SET_PROJECTS_DATA", payload: data[language] });
             })
             .catch((error) => console.error("Error fetching projects data:", error));
     }, [language]);
 
-    if (!projectsData) {
-        return
+    if (!state.projectsData) {
+        return <div>Loading...</div>;
     }
 
     return (
         <div className="projects-container bg-yellw dark:bg-d-bg h-[999px] flex flex-col items-center justify-center overflow-hidden">
             <h1 className="text-[48px] font-bold text-bl dark:text-yellw leading-[48px] mb-12 -ml-[785px] ">
-                {projectsData.h1}
+                {state.projectsData.h1}
             </h1>
             <div className="flex flex-col gap-16 items-center">
-                {projectsData.projects.map((project, index) => (
+                {state.projectsData.projects.map((project, index) => (
                     <div
                         key={index}
                         className="project-card bg-whit dark:bg-[#2B2727] shadow-lg rounded-[12px] overflow-hidden w-[960px] h-[360px] flex items-start "
