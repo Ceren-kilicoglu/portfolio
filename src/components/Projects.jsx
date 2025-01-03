@@ -40,7 +40,7 @@ const Projects = () => {
                 {state.projectsData.projects.map((project, index) => (
                     <div
                         key={index}
-                        className="project-card bg-whit dark:bg-[#2B2727] shadow-lg rounded-[12px] overflow-hidden w-full sm:w-[500px] md:w-[700px] lg:w-[960px] flex flex-col sm:flex-row items-start"
+                        className="project-card bg-whit dark:bg-[#2B2727] shadow-lg rounded-[12px] overflow-hidden w-full sm:w-[500px] md:w-[700px] lg:w-[950px] lg:h-[330px] flex flex-col sm:flex-row items-start"
                     >
                         {/* Resim */}
                         <img
@@ -50,7 +50,7 @@ const Projects = () => {
                         />
 
                         {/* Proje Detayları */}
-                        <div className="p-4 sm:p-6 md:p-8 lg:p-12 flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-4 flex-grow  ">
+                        <div className="p-4 sm:p-6 md:p-8 lg:p-10 flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-4 flex-grow  ">
                             <h2 className="text-[16px] sm:text-[24px] md:text-[28px] lg:text-[32px] font-bold text-[#4338CA] dark:text-[#C1BAED] leading-[24px] sm:leading-[32px]">
                                 {project.title}
                             </h2>

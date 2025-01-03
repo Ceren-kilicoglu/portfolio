@@ -35,7 +35,7 @@ const Hero = () => {
   const { profile, buttons, darkModeToggle } = state.data;
 
   return (
-    <div div className="hero-container flex overflow-hidden" >
+    <div className="hero-container flex overflow-hidden" >
       <div className="hero-blue-section  h-[671px] w-[1550px] bg-bl dark:bg-d-bl">
         {/* Profile  */}
         <div className="hero-name-section w-[960px] h-[72px] absolute top-[37px] left-[280px]">
