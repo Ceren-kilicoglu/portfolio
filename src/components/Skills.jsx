@@ -29,20 +29,20 @@ const Skills = () => {
     }
 
     return (
-        <div className="skills-container bg-[#F9F9F9] dark:bg-[#252128] h-[671px] overflow-hidden">
-            <div className="flex justify-between w-[1000px] h-[430px] absolute top-[755px] left-[280px]">
-                <h2 className="w-[128px] h-[58px] text-[#4832D3] dark:text-yellow font-bold text-[48px] leading-[58.09px]">
+        <div className="skills-container bg-[#F9F9F9] dark:bg-[#252128] h-[450px] overflow-hidden">
+            <div className="flex flex-col justify-between  h-[100px] absolute top-[725px] left-[5%]">
+                <h2 className="w-[150px] h-[58px] text-[#4832D3] dark:text-yellow font-bold text-[28px] leading-[38px]">
                     {state.data.title}
                 </h2>
-                <div className="grid grid-cols-2 flex justify-between gap-y-[35px] gap-x-[135px]">
+                <div className="grid grid-cols-2 justify-between gap-y-[55px] gap-x-[25px] mt-8">
                     {state.data.logos.map((logo) => (
-                        <div key={logo.id} className="flex items-center gap-6">
+                        <div key={logo.id} className="flex items-center gap-2 ">
                             <img
                                 src={logo.logo}
                                 alt={logo.name}
-                                className="w-[120px] h-[120px] object-cover flex gap-6"
+                                className="w-[20vw] h-[20vw] object-cover"
                             />
-                            <p className="w-[146px] h-[36px] uppercase text-[#777777] dark:text-white font-medium text-[24px] leading-[36px]">
+                            <p className="w-[100px] h-[36px] uppercase text-[#777777] dark:text-white font-medium  leading-[38px] text-[4vw]">
                                 {logo.name}
                             </p>
                         </div>
@@ -50,6 +50,8 @@ const Skills = () => {
                 </div>
             </div>
         </div>
+
+
 
     );
 };

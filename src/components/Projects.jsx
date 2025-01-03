@@ -29,23 +29,29 @@ const Projects = () => {
     }
 
     return (
-        <div className="projects-container bg-yellw dark:bg-d-bg min-h-screen sm:h-[800px] lg:h-[999px] flex flex-col items-center justify-center overflow-hidden px-4 sm:px-8">
-            <h1 className="text-[48px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-bold text-bl dark:text-yellw leading-[24px] sm:leading-[32px] md:leading-[40px] lg:leading-[48px] mb-6 sm:mb-8 md:mb-10 lg:mb-12 lg:-ml-[785px] md:-ml-[550px] sm:-ml-[380px]  ">
+        <div className="projects-container bg-yellw dark:bg-d-bg flex flex-col items-center justify-start overflow-hidden px-4 sm:px-8 py-12">
+            {/* Başlık */}
+            <h1 className="text-[28px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-bold text-bl dark:text-yellw leading-[32px] sm:leading-[40px] mb-4 sm:mb-6 md:mb-8 lg:mb-10  sm:mt-4 md:mt-6 lg:mt-8 text-left w-full sm:w-[500px] md:w-[700px] lg:w-[960px]">
                 {state.projectsData.h1}
             </h1>
-            <div className="flex flex-col gap-8 sm:gap-12 md:gap-14 lg:gap-16 items-center">
+
+            {/* Projeler */}
+            <div className="flex flex-col gap-8 sm:gap-12 md:gap-14 lg:gap-16 items-center w-full sm:w-[500px] md:w-[700px] lg:w-[960px] flex-grow">
                 {state.projectsData.projects.map((project, index) => (
                     <div
                         key={index}
                         className="project-card bg-whit dark:bg-[#2B2727] shadow-lg rounded-[12px] overflow-hidden w-full sm:w-[500px] md:w-[700px] lg:w-[960px] flex flex-col sm:flex-row items-start"
                     >
+                        {/* Resim */}
                         <img
                             src={project.image}
                             alt={project.title}
-                            className="w-full sm:w-[160px] md:w-[240px] lg:w-[340px] h-40 sm:h-full object-cover"
+                            className="w-full h-auto sm:w-[180px] md:w-[240px] lg:w-[340px] sm:h-[330px] md:h-[350px] lg:h-[400px] object-cover"
                         />
-                        <div className="p-4 sm:p-6 md:p-8 lg:p-12 flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-4 flex-grow">
-                            <h2 className="text-[16px] sm:text-[24px] md:text-[28px] lg:text-[32px] font-bold text-[#4338CA] dark:text-[#C1BAED] leading-[16px] sm:leading-[24px] md:leading-[28px] lg:leading-[32px]">
+
+                        {/* Proje Detayları */}
+                        <div className="p-4 sm:p-6 md:p-8 lg:p-12 flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-4 flex-grow  ">
+                            <h2 className="text-[16px] sm:text-[24px] md:text-[28px] lg:text-[32px] font-bold text-[#4338CA] dark:text-[#C1BAED] leading-[24px] sm:leading-[32px]">
                                 {project.title}
                             </h2>
                             <p className="text-[#383838] dark:text-whit text-[12px] sm:text-[14px] md:text-[16px] lg:text-[16px] font-normal leading-[16px] md:leading-[18px] lg:leading-[20px]">
@@ -55,7 +61,7 @@ const Projects = () => {
                                 {project.tags.map((tag, idx) => (
                                     <span
                                         key={idx}
-                                        className="px-2 sm:px-4 py-1 sm:py-2 bg-bl dark:bg-[#8173DA] text-whit text-[10px] sm:text-[12px] md:text-[14px] font-medium rounded-[12px] sm:rounded-[16px] md:rounded-[20px]"
+                                        className="px-2 sm:px-4 py-1 sm:py-2 bg-bl dark:bg-[#8173DA] text-whit text-[10px] sm:text-[12px] md:text-[14px] font-medium rounded-[12px] sm:rounded-[16px]"
                                     >
                                         {tag}
                                     </span>
@@ -84,9 +90,6 @@ const Projects = () => {
                 ))}
             </div>
         </div>
-
-
-
 
 
 
