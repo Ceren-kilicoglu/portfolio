@@ -6,7 +6,7 @@ import projectsDataReducer from "../reducers/projectsDataReducer";
 const Projects = () => {
     const { language } = useLanguage();
 
-    // useReducer ile state yönetimi
+
     const [state, dispatch] = useReducer(projectsDataReducer, { projectsData: null });
 
     useEffect(() => {

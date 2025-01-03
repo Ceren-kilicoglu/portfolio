@@ -6,7 +6,7 @@ import profileDataReducer from '../reducers/profileDataReducer';
 const Profile = () => {
     const { language } = useLanguage();
 
-    // useReducer kullanarak state yönetimi
+
     const [state, dispatch] = useReducer(profileDataReducer, { profileData: null });
 
     useEffect(() => {

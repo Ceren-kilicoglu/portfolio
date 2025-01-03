@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { useLanguage } from '../contexts/LanguageContext';
 
-// Reducer Fonksiyonu
+
 const footerDataReducer = (state, action) => {
     switch (action.type) {
         case 'SET_FOOTER_DATA':
@@ -16,7 +16,6 @@ const footerDataReducer = (state, action) => {
 const Footer = () => {
     const { language } = useLanguage();
 
-    // useReducer ile state ve dispatch'i tanımlıyoruz
     const [state, dispatch] = useReducer(footerDataReducer, { contactData: null });
 
     useEffect(() => {
@@ -34,7 +33,6 @@ const Footer = () => {
             .catch((error) => console.error("Error fetching footer data:", error));
     }, [language]);
 
-    // Eğer veriler henüz gelmediyse, component henüz render edilmez
     if (!state.contactData) {
         return null;
     }

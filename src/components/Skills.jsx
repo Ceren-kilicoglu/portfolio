@@ -6,7 +6,7 @@ import skillsDataReducer from "../reducers/skillsDataReducer";
 const Skills = () => {
     const { language } = useLanguage();
 
-    // useReducer kullanarak state yönetimi
+
     const [state, dispatch] = useReducer(skillsDataReducer, { data: { title: "", logos: [] } });
 
     useEffect(() => {

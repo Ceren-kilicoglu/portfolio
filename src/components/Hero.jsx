@@ -10,7 +10,7 @@ const Hero = () => {
   const { darkMode, toggleDarkMode } = useDarkMode();
   const { language, toggleLanguage } = useLanguage();
 
-  // useReducer kullanarak state yönetimi
+
   const [state, dispatch] = useReducer(heroDataReducer, { data: null });
 
   useEffect(() => {
