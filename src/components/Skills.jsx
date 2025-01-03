@@ -30,11 +30,11 @@ const Skills = () => {
 
     return (
         <div className="skills-container bg-[#F9F9F9] dark:bg-[#252128] h-[450px] overflow-hidden">
-            <div className="flex flex-col justify-between  h-[100px] absolute top-[725px] left-[5%]">
+            <div className="flex flex-col justify-between  h-[100px] absolute top-[690px] left-[5%]">
                 <h2 className="w-[150px] h-[58px] text-[#4832D3] dark:text-yellow font-bold text-[28px] leading-[38px]">
                     {state.data.title}
                 </h2>
-                <div className="grid grid-cols-2 justify-between gap-y-[55px] gap-x-[25px] mt-8">
+                <div className="grid grid-cols-2 justify-between gap-y-[55px] gap-x-[33px] mt-8">
                     {state.data.logos.map((logo) => (
                         <div key={logo.id} className="flex items-center gap-2 ">
                             <img
