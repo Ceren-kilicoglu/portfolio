@@ -45,15 +45,15 @@ const Footer = () => {
     };
 
     return (
-        <div className='w-full max-w-[1519px] h-[454px] bg-[#F9F9F9] dark:bg-[#252128] relative overflow-hidden'>
-            <div className='w-full max-w-[483px] h-[290px] absolute left-1/2 transform -translate-x-1/2 top-[80px] flex flex-col gap-[24px] text-center sm:text-left'>
+        <div className='  h-[454px] bg-[#F9F9F9] dark:bg-[#252128] relative overflow-hidden px-12  sm:px-8 py-12 '>
+            <div className='max-w-[483px]  sm:w-[500px] md:w-[700px] lg:w-[960px] mb-8 h-[290px] absolute left-1/2 transform -translate-x-1/2 top-[80px] flex flex-col gap-[24px] text-center sm:text-left'>
                 <h1 className='font-bold text-[36px] sm:text-[48px] lg:text-[48px] leading-[52px] sm:leading-[72px] text-[#4731D3] dark:text-[#8F88FF]'>
                     {heading}
                 </h1>
-                <p className='w-full max-w-[448px] font-normal text-[18px] sm:text-[24px] lg:text-[24px] text-[#120B39] dark:text-whit text-center'>
+                <p className='font-normal text-[18px] sm:text-[24px] lg:text-[24px] text-[#120B39] dark:text-whit text-center'>
                     {prompt}
                 </p>
-                <p className='w-auto font-medium text-[16px] sm:text-[20px] lg:text-[20px] leading-[24.2px] underline text-[#4731D3] dark:text-[#8F88FF] ml-0 sm:ml-[125px]'>
+                <p className='font-medium text-[16px] sm:text-[20px] lg:text-[20px] leading-[24.2px] underline text-[#4731D3] dark:text-[#8F88FF] ml-0 sm:ml-[125px]'>
                     {email}
                 </p>
                 <div className='flex gap-[10px] sm:gap-[15px] justify-center sm:justify-start sm:ml-[175px]'>

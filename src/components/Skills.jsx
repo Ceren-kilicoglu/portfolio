@@ -29,7 +29,7 @@ const Skills = () => {
     }
 
     return (
-        <div className="skills-container bg-[#F9F9F9] dark:bg-[#252128] flex flex-col items-center justify-start overflow-hidden px-4 sm:px-8 py-12">
+        <div className="skills-container bg-[#F9F9F9] dark:bg-[#252128] flex flex-col items-center justify-start overflow-hidden px-12 sm:px-8 py-12">
             <div className="flex flex-col lg:flex-row items-start w-full sm:w-[500px] md:w-[700px] lg:w-[960px] lg:gap-6">
                 <h2 className="text-[28px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-bold text-[#4832D3] dark:text-yellow leading-[32px] sm:leading-[40px] lg:leading-[58.09px] mb-4 sm:mb-6 md:mb-8 lg:mb-0 w-auto lg:w-[128px]">
                     {state.data.title}

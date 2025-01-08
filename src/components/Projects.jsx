@@ -29,7 +29,7 @@ const Projects = () => {
     }
 
     return (
-        <div className="projects-container bg-yellw dark:bg-d-bg flex flex-col items-center justify-start overflow-hidden px-4 sm:px-8 py-12">
+        <div className="projects-container bg-yellw dark:bg-d-bg flex flex-col items-center justify-start overflow-hidden px-12 sm:px-8 py-12">
             {/* Başlık */}
             <h1 className="text-[28px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-bold text-bl dark:text-yellw leading-[32px] sm:leading-[40px] mb-4 sm:mb-6 md:mb-8 lg:mb-10  sm:mt-4 md:mt-6 lg:mt-8 text-left w-full sm:w-[500px] md:w-[700px] lg:w-[960px]">
                 {state.projectsData.h1}

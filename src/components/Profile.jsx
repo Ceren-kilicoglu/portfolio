@@ -32,7 +32,7 @@ const Profile = () => {
 
     return (
 
-        <div className='profile-container bg-bl dark:bg-d-bl h-auto overflow-hidden px-4 sm:px-8 py-12'>
+        <div className='profile-container bg-bl dark:bg-d-bl h-auto overflow-hidden px-12 sm:px-8 py-12'>
             <div className='profile-text w-full sm:w-[500px] md:w-[700px] lg:w-[960px] mx-auto mb-8'>
                 <h1 className='text-yellw text-[20px] sm:text-[28px] md:text-[36px] lg:text-[40px] font-bold leading-[24px] sm:leading-[32px] mb-4 sm:mb-6 md:mb-8 lg:mb-10 text-left'>
                     {profile.title}
@@ -59,10 +59,8 @@ const Profile = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex justify-start lg:w-1/3'>
-                        <img className='rounded-[10px] w-full h-auto object-cover sm:w-[12px] sm:h-[120px] md:w-[300px] md: md:h-[240px] lg:w-[300px] lg:h-[290.68px]' src={image} alt="Profile" />
-                    </div>
-                    <div className='flex flex-col gap-4 lg:gap-6 w-full lg:w-1/3'>
+
+                    <div className='flex flex-col  gap-4 lg:gap-6 w-full lg:w-1/2'>
                         <h2 className="text-[#FFFFFF] font-medium text-[16px] sm:text-[20px] md:text-[24px] lg:text-[28px] leading-[28px] mb-4">
                             {aboutMe.title}
                         </h2>

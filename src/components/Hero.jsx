@@ -35,106 +35,112 @@ const Hero = () => {
   const { profile, buttons, darkModeToggle } = state.data;
 
   return (
-    <div className="hero-container flex overflow-hidden" >
-      <div className="hero-blue-section  h-[671px] w-[1550px] bg-bl dark:bg-d-bl">
-        {/* Profile  */}
-        <div className="hero-name-section w-[960px] h-[72px] absolute top-[37px] left-[280px]">
-          <h2 className="hero-name  text-[32px] leading-[72px] text-yellw font-bold">
-            {profile.name}
-          </h2>
-        </div>
-        <div className="hero-content w-[955px] h-[375.89px] absolute top-[148px] left-[280px] flex justify-between">
-          <div className="hero-content-left pt-24">
-            <h1 className="hero-title w-[528.88px] h-[118px] text-yellw text-[54px] leading-[59.4px] font-bold">
-              {profile.title}
-            </h1>
-            <p className="hero-description pt-8 w-[528.88px] h-[58px] font-normal text-[24px] leading-[29.05px] text-white dark:text-gray-300">
-              {profile.description}
-            </p>
-            <div className="button-group flex gap-[10px] pt-16">
-              <button
-                id="github"
-                type="button"
-                onClick={() => window.open(buttons.github.link, "_blank")}
-                className="social-button bg-white dark:bg-gray-800 dark:border-whit dark:border-[1px] text-xl text-dark-bl dark:text-gray-300 font-medium pt-3 pr-5 pb-3 pl-3 rounded shadow hover:bg-gray-100 dark:hover:bg-gray-900"
-              >
-                <FontAwesomeIcon icon={faGithub} size="lg" />
-                <span className="pl-3">{buttons.github.text}</span>
-              </button>
-              <button
-                id="linkedin"
-                type="button"
-                onClick={() => window.open(buttons.linkedin.link, "_blank")}
-                className="social-button bg-white dark:bg-gray-800 dark:border-whit dark:border-[1px] text-xl text-dark-bl dark:text-gray-300 font-medium pt-3 pr-5 pb-3 pl-3 rounded shadow hover:bg-gray-100 dark:hover:bg-gray-900 "
-              >
-                <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
-                <span className="pl-3">{buttons.linkedin.text}</span>
-              </button>
-            </div>
-          </div>
-          <div className="pl-[50px]">
-            <img
-              src={profile.image}
-              alt="Hero"
-              className="hero-image h-[375.89px] w-[350px] rounded-[18px] object-cover"
-            />
-          </div>
-        </div>
-      </div>
+    <div className="hero-container bg-[#fdfdff] overflow-hidden h-full sm:h-[671px] flex flex-col items-center justify-center  px-12 sm:px-8 py-12">
+      {/* Header Section with Language and Theme Toggle */}
+      <header className="flex items-center  justify-end w-full sm:w-[500px] md:w-[700px] lg:w-[960px] mb-8 ">
+        {/* Language Button */}
+        <button onClick={toggleLanguage} className="language-toggle font-normal text-[10px]  sm:text-[13px]  md:text-[15px] ">
+          {language === "en" ? (
+            <span>
+              <span className={darkMode ? "text-[#8F88FF]" : "text-[#CBF281]"}>
+                TÜRKÇE
+              </span>
+              <span className={darkMode ? "text-[#777777]" : "text-[#D9D9D9]"}>
+                &apos;YE GEÇ
+              </span>
+            </span>
+          ) : (
+            <span>
+              <span className={darkMode ? "text-[#777777]" : "text-[#D9D9D9]"}>
+                GO
+              </span>
+              <span className={darkMode ? "text-[#8F88FF]" : "text-[#CBF281]"}>
+                ENGLISH
+              </span>
+            </span>
+          )}
+        </button>
 
-      <div className="green-container h-[671px] w-[710px] left-[1008px] bg-yellw dark:bg-d-bg">
-        <div className="flex ">
-          {/* Language Button */}
+        {/* Vertical Separator */}
+        <span className="text-[#D9D9D9] px-2 ">|</span>
+
+        {/* Theme Button */}
+        <div className="theme-switch flex items-center gap-2">
           <button
-            onClick={toggleLanguage}
-            className="language-toggle w-fit border-none cursor-pointer absolute left-[890px] top-[35px] font-semibold text-[15px] leading-[18.15px]"
+            className="theme-toggle w-[55px] h-[24px] bg-[#8F88FF] dark:bg-[#3A3A3A] rounded-full flex items-center p-1"
+            onClick={toggleDarkMode}
           >
-            {language === "en" ? (
-              <span>
-                <span
-                  className={darkMode ? "text-[#8F88FF]" : "text-[#CBF281]"}
-                >
-                  TÜRKÇE
-                </span>
-                <span
-                  className={darkMode ? "text-[#777777]" : "text-[#D9D9D9]"}
-                >
-                  &apos;YE GEÇ
-                </span>
-              </span>
-            ) : (
-              <span>
-                <span
-                  className={darkMode ? "text-[#777777]" : "text-[#D9D9D9]"}
-                >
-                  GO
-                </span>
-                <span
-                  className={darkMode ? "text-[#8F88FF]" : "text-[#CBF281]"}
-                >
-                  {" "}
-                  ENGLISH
-                </span>
-              </span>
-            )}
+            <div
+              className={`theme-indicator w-4 h-4 bg-[#FFE86E] dark:bg-[#FFE86E] rounded-full transition-transform duration-300 ease-in-out transform ${darkMode ? "translate-x-0 rotate-[180deg]" : "translate-x-[31px] rotate-0"}`}
+            ></div>
           </button>
-          {/* Theme Button */}
-          <div className="theme-switch flex items-center space-x-3 absolute right-[295px] top-[32px]">
+          <p className="text-[#4731D3] dark:text-[#D9D9D9] font-normal text-[10px]  sm:text-[13px]  md:text-[15px] ">
+            {darkMode ? "LIGHT MODE" : darkModeToggle.text}
+          </p>
+        </div>
+      </header>
+
+      <section className="hero-name flex flex-col flex-grow sm:flex-row items-start w-full sm:w-[500px] md:w-[700px] lg:w-[960px] mb-4 sm:mb-32 md:mb-24 lg:mb-24 flex-grow text-center sm:text-left relative">
+        {/* Profil Adı */}
+        <h2 className="hero-name font-bold text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] mt-4 sm:mt-4 md:mt-8 lg:mt-4 sm:mt-0 z-10">
+          {profile.name}
+        </h2>
+
+        {/* Arka Planda Renk Geçişli Kutuyu Koyma */}
+        <div className="h-4 w-[35%] sm:w-[20%] md:w-[110px] rounded-[4px] ml-2  absolute bottom-0 left-0 sm:bottom-1 md:bottom-2 lg:bottom:4 bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 z-0"></div>
+      </section>
+
+      {/* Profile Section */}
+      <section className="hero-profile flex flex-col items-center text-center  sm:flex-row  w-full sm:w-[500px] md:w-[700px] lg:w-[960px] mb-8 mt-[70px] sm:mt-[34px] flex-grow  sm:text-left" >
+        <div className="hero-text flex-1 sm:pr-6">
+          {/* Profile Name */}
+
+
+          {/* Profile Title */}
+          <h1 className="hero-title  font-bold text-[34px]  leading-[48px] sm:text-[38px] sm:leading-[44px] sm:w-[295px] md:text-[44px] md:leading-[51px] md:w-[350px]  lg:text-[54px] lg:w-[530px] lg:leading-[59.4px] mb-8">
+            {profile.title}
+          </h1>
+
+          {/* Profile Description */}
+          <p className="hero-description font-normal text-[15px]  leading-[22px]  sm:text-[18.5px] sm:w-[300px] sm:leading-[24px] md:text-[20px] md:leading-[25px] md:w-[370px] lg:text-[24px] lg:w-[530px] lg:leading-[29.05px]">
+            {profile.description}
+          </p>
+
+          {/* Social Buttons */}
+          <div className="button-group flex gap-8 mt-16 sm:mt-8 md:mt-8 lg:mt-12 justify-center sm:justify-start">
             <button
-              className="theme-toggle w-[55px] h-[24px] bg-[#8F88FF] dark:bg-[#3A3A3A] rounded-full flex items-center p-1"
-              onClick={toggleDarkMode}
+              id="github"
+              type="button"
+              onClick={() => window.open(buttons.github.link, "_blank")}
+              className="social-button"
             >
-              <div
-                className={`theme-indicator w-4 h-4 bg-[#FFE86E] dark:[#FFE86E] rounded-full transition-transform duration-300 ease-in-out transform ${darkMode ? "translate-x-0 rotate-[180deg]" : "translate-x-[31px] rotate-0"}`}
-              ></div>
+              <FontAwesomeIcon icon={faGithub} size="xl" />
             </button>
-            <p className="text-[#4731D3] dark:text-[#D9D9D9] font-semibold text-[15px] leading-[18.15px]">
-              {darkMode ? "LIGHT MODE" : darkModeToggle.text}
-            </p>
+            <button
+              id="linkedin"
+              type="button"
+              onClick={() => window.open(buttons.linkedin.link, "_blank")}
+              className="social-button"
+            >
+              <FontAwesomeIcon icon={faLinkedinIn} size="xl" />
+            </button>
           </div>
         </div>
-      </div>
-    </div>
+
+        {/* Profile Image */}
+        <div className=" mt-16 w-[250px] md:mt-0 lg:mt-0 sm:w-[200px]  md:w-[300px] lg:w-[300px]">
+          <img
+            src={profile.image}
+            alt="Hero"
+            className="hero-image object-cover rounded-[22px] sm:rounded-[22px] md:rounded-[22px] h-[250px] sm:h-[200px]  md:h-[275px] lg:h-[300px]"
+          />
+        </div>
+      </ section>
+
+    </div >
+
+
+
   );
 };
 
