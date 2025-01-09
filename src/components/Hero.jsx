@@ -35,26 +35,26 @@ const Hero = () => {
   const { profile, buttons, darkModeToggle } = state.data;
 
   return (
-    <div className="hero-container   dark:bg-[#051121] overflow-hidden h-full sm:h-[671px] flex flex-col items-center justify-center  px-12 sm:px-8 py-12">
+    <div className="hero-container bg-bl dark:bg-d-bl overflow-hidden h-full sm:h-[671px] flex flex-col items-center justify-center  px-12 sm:px-8 py-12">
       {/* Header Section with Language and Theme Toggle */}
       <header className="flex items-center  justify-end w-full sm:w-[500px] md:w-[700px] lg:w-[960px] mb-8 ">
         {/* Language Button */}
-        <button onClick={toggleLanguage} className="language-toggle font-normal text-[10px]  sm:text-[13px]  md:text-[15px] ">
+        <button onClick={toggleLanguage} className="language-toggle font-bold text-[10px]  sm:text-[13px]  md:text-[15px] ">
           {language === "en" ? (
             <span>
-              <span className={darkMode ? "text-[#f0f7f7]" : "text-[]"}>
+              <span className={darkMode ? "text-d-v" : "text-yellw"}>
                 TÜRKÇE
               </span>
-              <span className={darkMode ? "text-[#c6f3f5]" : "text-[]"}>
+              <span className={darkMode ? "text-d-g" : "text-wh"}>
                 &apos;YE GEÇ
               </span>
             </span>
           ) : (
             <span>
-              <span className={darkMode ? "text-[#c6f3f5]" : "text-[]"}>
+              <span className={darkMode ? "text-d-g" : "text-wh"}>
                 GO
               </span>
-              <span className={darkMode ? "text-[#f0f7f7]" : "text-[]"}>
+              <span className={darkMode ? "text-d-v pl-1" : "text-yellw pl-1"}>
                 ENGLISH
               </span>
             </span>
@@ -67,22 +67,22 @@ const Hero = () => {
         {/* Theme Button */}
         <div className="theme-switch flex items-center gap-2">
           <button
-            className="theme-toggle w-[55px] h-[24px] bg-[] dark:bg-[#1D3557] rounded-full flex items-center p-1"
+            className="bg-vio dark:bg-d-b theme-toggle w-[55px] h-[24px]  rounded-full flex items-center p-1"
             onClick={toggleDarkMode}
           >
             <div
-              className={`theme-indicator w-4 h-4 bg-[] dark:bg-[#c6f3f5] rounded-full transition-transform duration-300 ease-in-out transform ${darkMode ? "translate-x-0 rotate-[180deg]" : "translate-x-[31px] rotate-0"}`}
+              className={`bg-yel theme-indicator w-4 h-4   rounded-full transition-transform duration-300 ease-in-out transform ${darkMode ? "translate-x-0 rotate-[180deg]" : "translate-x-[31px] rotate-0"}`}
             ></div>
           </button>
-          <p className="text-[] dark:text-[#f0f7f7] font-normal text-[10px]  sm:text-[13px]  md:text-[15px] ">
+          <p className="  text-yellw dark:text-wh font-bold text-[10px]  sm:text-[13px]  md:text-[15px] ">
             {darkMode ? "LIGHT MODE" : darkModeToggle.text}
           </p>
         </div>
       </header>
 
       <section className="hero-name flex flex-col flex-grow sm:flex-row items-start w-full sm:w-[500px] md:w-[700px] lg:w-[960px] mb-4 sm:mb-32 md:mb-24 lg:mb-24 flex-grow text-center sm:text-left relative">
-        {/* Profil Adı */}
-        <h2 className="hero-name text-blue dark:text-[#f0f7f7]  font-bold text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] mt-4 sm:mt-4 md:mt-8 lg:mt-4 sm:mt-0 z-10">
+        {/* Profil Name */}
+        <h2 className="hero-name text-yellw font-bold text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] mt-4 sm:mt-4 md:mt-8 lg:mt-4 sm:mt-0 z-10">
           {profile.name}
         </h2>
       </section>
@@ -90,25 +90,23 @@ const Hero = () => {
       {/* Profile Section */}
       <section className="hero-profile flex flex-col items-center text-center  sm:flex-row  w-full sm:w-[500px] md:w-[700px] lg:w-[960px] mb-8 mt-[70px] sm:mt-[34px] flex-grow  sm:text-left">
         <div className="hero-text flex-1 sm:pr-6">
-          {/* Profile Name */}
-
           {/* Profile Title */}
-          <h1 className="hero-title  dark:text-[#f0f7f7] font-bold text-[34px]  leading-[48px] sm:text-[38px] sm:leading-[44px] sm:w-[295px] md:text-[44px] md:leading-[51px] md:w-[350px]  lg:text-[54px] lg:w-[530px] lg:leading-[59.4px] mb-8">
+          <h1 className="hero-title text-yellw  font-bold text-[34px]  leading-[48px] w-[150px] text-left sm:text-[40px] sm:leading-[44px] sm:w-[295px] md:text-[44px] md:leading-[51px] md:w-[350px]  lg:text-[54px] lg:w-[530px] lg:leading-[59.4px] mb-8">
             {profile.title}
           </h1>
 
           {/* Profile Description */}
-          <p className="hero-description dark:text-[#c6f3f5] font-normal text-[15px]  leading-[22px]  sm:text-[18.5px] sm:w-[300px] sm:leading-[24px] md:text-[20px] md:leading-[25px] md:w-[370px] lg:text-[24px] lg:w-[530px] lg:leading-[29.05px] ">
+          <p className="hero-description text-whit font-normal text-[15px]  leading-[22px] w-[225px] text-left sm:text-[17px] sm:w-[300px] sm:leading-[24px] md:text-[18px] md:leading-[25px] md:w-[390px] lg:text-[22px] lg:w-[575px] lg:leading-[29.05px] ">
             {profile.description}
           </p>
 
           {/* Social Buttons */}
-          <div className="button-group flex gap-8 mt-16 sm:mt-8 md:mt-8 lg:mt-12 justify-center sm:justify-start">
+          <div className="button-group flex gap-8 mt-16 sm:mt-8 md:mt-8 lg:mt-12 justify-start">
             <button
               id="github"
               type="button"
               onClick={() => window.open(buttons.github.link, "_blank")}
-              className="social-button dark:text-[#c6f3f5]"
+              className="social-button text-whit "
             >
               <FontAwesomeIcon icon={faGithub} size="xl" />
             </button>
@@ -116,7 +114,7 @@ const Hero = () => {
               id="linkedin"
               type="button"
               onClick={() => window.open(buttons.linkedin.link, "_blank")}
-              className="social-button dark:text-[#c6f3f5]"
+              className="social-button text-whit"
             >
               <FontAwesomeIcon icon={faLinkedinIn} size="xl" />
             </button>

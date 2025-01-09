@@ -18,7 +18,7 @@
         },
         "aboutMe": {
             "title": "About Me",
-            "description": "I am a frontend developer focused on building responsive, intuitive, and visually appealing web interfaces. I enjoy turning creative ideas into functional and user-friendly digital experiences."
+            "description": "Hi! 👋 A frontend developer passionate about creating user-friendly and visually appealing web experiences. With a background in German studies, I’ve honed my analytical thinking skills and combined them with technologies like HTML, CSS, JavaScript, and React to deliver creative solutions.I aim to work on projects that enhance user experiences while continuously improving my skills."
         },
         "image": "https://s3-alpha-sig.figma.com/img/ec36/93fd/2fc15cffc612b2448fb1f38e4c8c72fd?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lMpxhOHh~QaWLEokwuvZkAD4SCOU0RRkHKFjySjLzbVEAk6U0vcYbFUA7QCjvyIBnoKUECjjbHIEYpeKdpevvOj3bYkp2EZTQQvarPvx3Be3r7u4GtJO~XsTNSinpz6tp-W8Zxq9nBxJTNn5FWwuOBMhjJmfcR3c01AsR0~e3rmCn4hVvBE5fhgy0oRWML9ZNZo0Zu~OpVm5Yxlav-nP6Nx30CZB8WRXQ-DhYxGOZplbHXb49WSynuD4jggmKGxEy~PY-vojdrvopdqxBDlUzQuskUcSXxQlJDz4vgrei2oOL94zeKR32dVXZ6kZePY2CgS4WeYdNZUjxurOflvM~Q__"
     },
@@ -41,7 +41,7 @@
         },
         "aboutMe": {
             "title": "Hakkımda",
-            "description": "Ben, duyarlı, kullanıcı dostu ve görsel açıdan çekici web arayüzleri oluşturmayı odaklanan bir frontend geliştiricisiyim. Yaratıcı fikirleri fonksiyonel dijital deneyimlere dönüştürmekten keyif alıyorum."
+            "description": "Merhaba! 👋  Kullanıcı dostu ve estetik web deneyimleri oluşturmayı seven bir frontend geliştiriciyim. Almanca eğitimiyle edindiğim analitik düşünme becerilerimi, HTML, CSS, JavaScript ve React gibi teknolojilerle birleştirerek yaratıcı çözümler üretiyorum.Kullanıcı deneyimini geliştiren projelerde yer almayı ve yeteneklerimi sürekli geliştirmeyi hedefliyorum."
         },
         "image": "https://s3-alpha-sig.figma.com/img/ec36/93fd/2fc15cffc612b2448fb1f38e4c8c72fd?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lMpxhOHh~QaWLEokwuvZkAD4SCOU0RRkHKFjySjLzbVEAk6U0vcYbFUA7QCjvyIBnoKUECjjbHIEYpeKdpevvOj3bYkp2EZTQQvarPvx3Be3r7u4GtJO~XsTNSinpz6tp-W8Zxq9nBxJTNn5FWwuOBMhjJmfcR3c01AsR0~e3rmCn4hVvBE5fhgy0oRWML9ZNZo0Zu~OpVm5Yxlav-nP6Nx30CZB8WRXQ-DhYxGOZplbHXb49WSynuD4jggmKGxEy~PY-vojdrvopdqxBDlUzQuskUcSXxQlJDz4vgrei2oOL94zeKR32dVXZ6kZePY2CgS4WeYdNZUjxurOflvM~Q__"
     }
