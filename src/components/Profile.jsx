@@ -45,19 +45,20 @@ const Profile = () => {
                             <h2 className=' text-whit font-semibold text-[18px]  leading-[22px] w-[225px] text-left sm:text-[20px] sm:w-[300px] sm:leading-[24px] md:text-[22px] md:leading-[25px] md:w-[390px] lg:text-[25px] lg:w-[575px] lg:leading-[29.05px]'>
                                 {profile.subtitle}
                             </h2>
-                            <div className='flex gap-2 sm:gap-0 md:gap-0 lg:gap-4 items-start'>
-                                <div className="flex flex-col text-yellw font-semibold text-[15px] sm:text-[16px]  md:text-[16px] lg:text-[18px] ">
+                            <div className='flex gap-4 sm:gap-0 md:gap-0 lg:gap-2 items-start'>
+                                <div className="flex flex-col text-yellw font-semibold w-[250px] text-[15px]  sm:text-[16px]  md:text-[16px] md:w-[175px] lg:text-[18px] lg:w-[200px] ">
                                     <p>{profile.labels.birth}</p>
-                                    <p>{profile.labels.residence}</p>
-                                    <p>{profile.labels.education}</p>
-                                    <p className=''>{profile.labels.preferredRole}</p>
+                                    <p className='mt-4'>{profile.labels.residence}</p>
+                                    <p className='mt-4'>{profile.labels.education}</p>
+                                    <p className='mt-10'>{profile.labels.preferredRole}</p>
                                 </div>
-                                <div className="flex flex-col text-whit font-normal text-[15px] sm:text-[16px] md:text-[16px] lg:text-[18px]">
+                                <div className="flex flex-col text-whit font-normal  text-[15px] w-[300px]  sm:text-[16px] md:text-[16px] md:w-[200px] lg:text-[18px] lg:w-[280px]">
                                     <p>{profile.details.birth}</p>
-                                    <p>{profile.details.residence}</p>
-                                    <p className=''>{profile.details.education}</p>
-                                    <p className=' '>{profile.details.preferredRole}</p>
+                                    <p className='mt-4'>{profile.details.residence}</p>
+                                    <p className='mt-4'>{profile.details.education}</p>
+                                    <p className='mt-4'>{profile.details.preferredRole}</p>
                                 </div>
+
                             </div>
                         </div>
 

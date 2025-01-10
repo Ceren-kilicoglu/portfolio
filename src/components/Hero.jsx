@@ -67,7 +67,7 @@ const Hero = () => {
         {/* Theme Button */}
         <div className="theme-switch flex items-center gap-2">
           <button
-            className="bg-vio dark:bg-d-b theme-toggle w-[42px] h-[20px]  sm:w-[57px] sm:h-[26px]   rounded-full flex items-center p-2"
+            className="bg-vio dark:bg-d-b theme-toggle w-[42px] h-[20px]  sm:w-[57px] sm:h-[29px]   rounded-full flex items-center p-2"
             onClick={toggleDarkMode}
           >
             <div
