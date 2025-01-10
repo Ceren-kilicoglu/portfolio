@@ -34,7 +34,7 @@ const Skills = () => {
                 <h2 className="text-bl  font-bold text-[34px]  leading-[48px] w-[150px] text-left sm:text-[38px] sm:leading-[44px] sm:w-[295px] md:text-[44px] md:leading-[51px] md:w-[350px]  lg:text-[54px] lg:w-[530px] lg:leading-[59.4px] mb-8">
                     {state.data.title}
                 </h2>
-                <div className="grid grid-cols-2 gap-8 sm:gap-12 lg:ml-[250px] md:gap-14 w-full sm:w-[500px] md:w-[700px] lg:w-[832px] lg:ml-[0px]">
+                <div className="grid grid-cols-2 gap-8 sm:gap-12  md:gap-14 w-full sm:w-[500px] md:w-[700px] lg:w-[832px] lg:ml-[0px]">
                     {state.data.logos.map((logo) => (
                         <div key={logo.id} className="flex items-center gap-[3vw] sm:gap-[3vw] md:gap-[3vw] lg:gap-6">
                             <img

@@ -39,7 +39,7 @@ const Hero = () => {
       {/* Header Section with Language and Theme Toggle */}
       <header className="flex items-center  justify-end w-full sm:w-[500px] md:w-[700px] lg:w-[960px] mb-8 ">
         {/* Language Button */}
-        <button onClick={toggleLanguage} className="language-toggle font-bold text-[10px]  sm:text-[13px]  md:text-[15px] ">
+        <button onClick={toggleLanguage} className="language-toggle font-bold text-[11px]  sm:text-[13px]  md:text-[14px] ">
           {language === "en" ? (
             <span>
               <span className={darkMode ? "text-d-v" : "text-yellw"}>
@@ -67,14 +67,14 @@ const Hero = () => {
         {/* Theme Button */}
         <div className="theme-switch flex items-center gap-2">
           <button
-            className="bg-vio dark:bg-d-b theme-toggle w-[55px] h-[24px]  rounded-full flex items-center p-1"
+            className="bg-vio dark:bg-d-b theme-toggle w-[42px] h-[20px]  sm:w-[57px] sm:h-[26px]   rounded-full flex items-center p-2"
             onClick={toggleDarkMode}
           >
             <div
-              className={`bg-yel theme-indicator w-4 h-4   rounded-full transition-transform duration-300 ease-in-out transform ${darkMode ? "translate-x-0 rotate-[180deg]" : "translate-x-[31px] rotate-0"}`}
+              className={`bg-yel theme-indicator w-3 h-3 sm:w-4 sm:h-4 rounded-full transition-transform duration-300 ease-in-out transform ${darkMode ? "translate-x-0 rotate-[180deg]" : " translate-x-[16px] sm:translate-x-[26px] rotate-0"}`}
             ></div>
           </button>
-          <p className="  text-yellw dark:text-wh font-bold text-[10px]  sm:text-[13px]  md:text-[15px] ">
+          <p className="  text-yellw dark:text-wh font-bold text-[11px]  sm:text-[13px]  md:text-[14px] ">
             {darkMode ? "LIGHT MODE" : darkModeToggle.text}
           </p>
         </div>

@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        'yellw': '#CBF281',
-        "bl": "#4731D3",
-        "whit": "#FFFFFF",
+        'yellw': '#D2FF72',
+        "bl": "#5D12D2",
+        "whit": "#F0F3FF",
         "wh": "#D9D9D9",
         "dark-bl": "#3730A3",
         "d-bl": "#171043",
@@ -17,8 +17,10 @@ export default {
         "d-v": "#C1BAED",
         "d-b": "#35317d",
         "d-g": "#777777",
-        "yel": "#fce408",
-        "vio": "#8F88FF"
+        "yel": "#F7EC09",
+        "vio": "#8F88FF",
+        "bla": "#4338CA",
+        "b": "#383838"
       }
 
     },
