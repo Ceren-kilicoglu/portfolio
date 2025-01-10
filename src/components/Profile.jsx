@@ -46,13 +46,13 @@ const Profile = () => {
                                 {profile.subtitle}
                             </h2>
                             <div className='flex gap-4 sm:gap-0 md:gap-0 lg:gap-2 items-start'>
-                                <div className="flex flex-col text-yellw font-semibold w-[250px] text-[15px]  sm:text-[16px]  md:text-[16px] md:w-[175px] lg:text-[18px] lg:w-[200px] ">
+                                <div className="flex flex-col text-yellw font-semibold w-[250px] text-[15px]   sm:text-[16px]  md:text-[16px] md:w-[175px] lg:text-[18px] lg:w-[200px] ">
                                     <p>{profile.labels.birth}</p>
                                     <p className='mt-4'>{profile.labels.residence}</p>
                                     <p className='mt-4'>{profile.labels.education}</p>
                                     <p className='mt-10'>{profile.labels.preferredRole}</p>
                                 </div>
-                                <div className="flex flex-col text-whit font-normal  text-[15px] w-[300px]  sm:text-[16px] md:text-[16px] md:w-[200px] lg:text-[18px] lg:w-[280px]">
+                                <div className="flex flex-col text-whit font-normal  text-[15px] w-[320px]  sm:text-[16px] md:text-[16px] md:w-[200px] lg:text-[18px] lg:w-[280px]">
                                     <p>{profile.details.birth}</p>
                                     <p className='mt-4'>{profile.details.residence}</p>
                                     <p className='mt-4'>{profile.details.education}</p>

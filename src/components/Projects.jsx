@@ -40,7 +40,7 @@ const Projects = () => {
                 {state.projectsData.projects.map((project, index) => (
                     <div
                         key={index}
-                        className="project-card bg-whit dark:bg-[#2B2727] shadow-lg rounded-[12px] overflow-hidden w-full sm:w-[500px] md:w-[700px] md:h-[350px]  lg:w-[950px] lg:h-[330px] flex flex-col sm:flex-row items-start"
+                        className="project-card bg-whit dark:bg-[#2B2727] shadow-lg rounded-[12px] overflow-hidden w-full sm:w-[500px] md:w-[700px] md:h-[350px]  lg:w-[950px] lg:h-[350px] flex flex-col sm:flex-row items-start"
                     >
                         {/* Resim */}
                         <img
