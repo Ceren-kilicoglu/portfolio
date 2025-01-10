@@ -25,7 +25,7 @@ const Projects = () => {
     }, [language]);
 
     if (!state.projectsData) {
-        return <div>Loading...</div>;
+        return
     }
 
     return (

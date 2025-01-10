@@ -25,7 +25,7 @@ const Skills = () => {
     }, [language]);
 
     if (!state.data) {
-        return <div>Loading...</div>;
+        return
     }
 
     return (

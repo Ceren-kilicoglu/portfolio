@@ -32,7 +32,7 @@ const Footer = () => {
     }, [language]);
 
     if (!state.contactData) {
-        return null;
+        return
     }
 
     const { heading, prompt, email, } = state.contactData;
