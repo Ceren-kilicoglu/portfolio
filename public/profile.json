@@ -18,29 +18,31 @@
         },
         "aboutMe": {
             "title": "About Me",
-            "description": "Hi there! 👋 I’m a frontend developer passionate about creating user-friendly and visually engaging web experiences. With expertise in HTML, CSS, JavaScript, and React, I transform ideas into functional and intuitive interfaces.My background in German studies and prior work experience have equipped me with excellent communication skills and a problem-solving mindset. These qualities help me approach design with a unique perspective, ensuring inclusivity and usability in every project I undertake.I’m a lifelong learner who loves exploring new technologies and improving my skills. My ultimate goal is to contribute to projects that not only enhance user experiences but also leave a lasting impact.Let’s connect and build something amazing together! 🚀"
-        },
-        "tr": {
-            "profile": {
-                "title": "Profil",
-                "subtitle": "Bilgiler",
-                "details": {
-                    "birth": "25.02.1998",
-                    "residence": "Antalya",
-                    "education": "Akdeniz Üniversitesi, Germanistik, 2024",
-                    "preferredRole": "Frontend, UI"
-                },
-                "labels": {
-                    "birth": "Doğum Tarihi",
-                    "residence": "İkametgah",
-                    "education": "Eğitim ",
-                    "preferredRole": "Tercih Edilen Rol"
-                }
+            "description": "Hi there! 👋 I’m a frontend developer passionate about creating user-friendly and visually engaging web experiences. With knowledge in HTML, CSS, JavaScript, and React, I transform ideas into functional and intuitive interfaces.",
+            "descriptiontwo": "My background in German studies and prior work experience have equipped me with excellent communication skills and a problem-solving mindset. These qualities help me approach design with a unique perspective, ensuring inclusivity and usability in every project I undertake. I’m a lifelong learner who loves exploring new technologies and improving my skills. My ultimate goal is to contribute to projects that not only enhance user experiences but also leave a lasting impact. Let’s connect and build something amazing together! 🚀"
+        }
+    },
+    "tr": {
+        "profile": {
+            "title": "Profil",
+            "subtitle": "Bilgiler",
+            "details": {
+                "birth": "25.02.1998",
+                "residence": "Antalya",
+                "education": "Akdeniz Üniversitesi, Germanistik, 2024",
+                "preferredRole": "Frontend, UI"
             },
-            "aboutMe": {
-                "title": "Hakkımda",
-                "description": "Merhaba! 👋 Ben, kullanıcı dostu ve estetik web deneyimleri oluşturmayı tutkuyla seven bir frontend geliştiriciyim. Workintech’te tamamladığım 3 aylık yoğun kurs sürecinde, HTML, CSS, JavaScript ve React gibi modern teknolojilerde uzmanlaştım.Almanca eğitim geçmişim ve önceki iş tecrübelerim sayesinde güçlü bir iletişim becerisi ve çözüm odaklı bir bakış açısı geliştirdim. Bu deneyimler, tasarımlarımı daha kullanıcı dostu ve kapsayıcı hale getirmemde bana yardımcı oluyor.Fikirleri işlevsel ve görsel açıdan etkileyici arayüzlere dönüştürmekten büyük bir keyif alıyorum. Sürekli öğrenmeye olan tutkum, beni yeni teknolojileri keşfetmeye ve kendimi geliştirmeye motive ediyor. Hedefim, kullanıcı deneyimini en üst düzeye çıkaran projelerde yer alarak fark yaratmak.Eğer birlikte harika projeler geliştirmek isterseniz, benimle iletişime geçmekten çekinmeyin! 😊"
+            "labels": {
+                "birth": "Doğum Tarihi",
+                "residence": "İkametgah",
+                "education": "Eğitim",
+                "preferredRole": "Tercih Edilen Rol"
             }
+        },
+        "aboutMe": {
+            "title": "Hakkımda",
+            "description": "Merhaba! 👋 Ben, kullanıcı dostu ve görsel açıdan etkileyici web deneyimleri yaratmaya tutkulu bir frontend geliştiricisiyim. HTML, CSS, JavaScript ve React konularında bilgim sayesinde fikirleri fonksiyonel ve sezgisel arayüzlere dönüştürüyorum.",
+            "descriptiontwo": "Almanca çalışmalarımdan ve önceki iş deneyimlerimden edindiğim güçlü iletişim becerileri ve problem çözme yetenekleri, tasarıma benzersiz bir bakış açısıyla yaklaşmamı sağlıyor. Bu niteliklerim sayesinde her projede kapsayıcılık ve kullanılabilirlik ön planda oluyor. Yeni teknolojileri keşfetmeyi ve becerilerimi geliştirmeyi seven bir hayat boyu öğreniciyim. Nihai amacım, sadece kullanıcı deneyimlerini geliştiren değil, aynı zamanda kalıcı bir etki bırakan projelere katkıda bulunmak. Hadi, birlikte harika bir şeyler inşa edelim! 🚀"
         }
     }
 }
