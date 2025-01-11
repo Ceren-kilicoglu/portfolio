@@ -29,14 +29,14 @@ const Projects = () => {
     }
 
     return (
-        <div className="projects-container bg-yellw dark:bg-d-bg overflow-hidden flex flex-col items-center justify-start  px-12 sm:px-8 py-12">
+        <section className="projects-container bg-yellw dark:bg-d-bg overflow-hidden flex flex-col items-center justify-start  px-12 sm:px-8 py-12">
             {/* Başlık */}
             <h1 className="text-[28px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-bold text-bl dark:text-yellw leading-[32px] sm:leading-[40px] mb-4 sm:mb-6 md:mb-8 lg:mb-10  sm:mt-4 md:mt-6 lg:mt-8 text-left w-full sm:w-[500px] md:w-[700px] lg:w-[960px]">
                 {state.projectsData.h1}
             </h1>
 
             {/* Projeler */}
-            <div className="flex flex-col gap-8 sm:gap-12 md:gap-14 lg:gap-16 items-center w-full sm:w-[500px] md:w-[700px] lg:w-[960px] flex-grow">
+            <section className="flex flex-col gap-8 sm:gap-12 md:gap-14 lg:gap-16 items-center w-full sm:w-[500px] md:w-[700px] lg:w-[960px] flex-grow">
                 {state.projectsData.projects.map((project, index) => (
                     <div
                         key={index}
@@ -88,8 +88,8 @@ const Projects = () => {
                         </div>
                     </div>
                 ))}
-            </div>
-        </div>
+            </section>
+        </section>
 
 
 

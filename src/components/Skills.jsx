@@ -29,7 +29,7 @@ const Skills = () => {
     }
 
     return (
-        <div className="skills-container bg-[#F9F9F9] dark:bg-[#252128] flex flex-col items-center justify-start overflow-hidden px-12 sm:px-8 py-12">
+        <section className="skills-container bg-[#F9F9F9] dark:bg-[#252128] flex flex-col items-center justify-start overflow-hidden px-12 sm:px-8 py-12">
             <div className="flex flex-col lg:flex-row items-start w-full sm:w-[500px] md:w-[700px] lg:w-[960px] lg:gap-6">
                 <h2 className="text-bl  font-bold text-[34px]  leading-[48px] w-[150px] text-left sm:text-[38px] sm:leading-[44px] sm:w-[295px] md:text-[44px] md:leading-[51px] md:w-[350px]  lg:text-[54px] lg:w-[530px] lg:leading-[59.4px] mb-8">
                     {state.data.title}
@@ -49,7 +49,7 @@ const Skills = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </section>
 
 
     );

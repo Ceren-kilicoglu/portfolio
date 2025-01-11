@@ -106,7 +106,7 @@ const Hero = () => {
               id="github"
               type="button"
               onClick={() => window.open(buttons.github.link, "_blank")}
-              className="social-button text-whit "
+              className="social-button text-whit hover:text-gray-400 transition-all"
             >
               <FontAwesomeIcon icon={faGithub} size="xl" />
             </button>
@@ -114,7 +114,7 @@ const Hero = () => {
               id="linkedin"
               type="button"
               onClick={() => window.open(buttons.linkedin.link, "_blank")}
-              className="social-button text-whit"
+              className="social-button text-whit hover:text-gray-400 transition-all"
             >
               <FontAwesomeIcon icon={faLinkedinIn} size="xl" />
             </button>

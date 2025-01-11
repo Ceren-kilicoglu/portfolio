@@ -40,7 +40,7 @@ const Footer = () => {
 
 
     return (
-        <div className='bg-[#F9F9F9] dark:bg-[#252128] overflow-hidden flex flex-col items-center justify-start  px-12 sm:px-8 py-12'>
+        <section className='bg-[#F9F9F9] dark:bg-[#252128] overflow-hidden flex flex-col items-center justify-start  px-12 sm:px-8 py-12'>
             <div className='flex flex-col flex-grow gap-8 sm:gap-6 md:gap-4 lg:gap-6 items-center text-center h-[250px] w-full sm:w-[500px] md:w-[700px] lg:w-[960px]'>
                 <h1 className='text-bl dark:text-vio font-bold w-[350px] sm:w-[450px] text-[34px] sm:text-[40px] md:text-[44px] lg:text-[48px] lg:w-[500px]  '>
                     {heading}
@@ -52,7 +52,7 @@ const Footer = () => {
                     {email}
                 </p>
             </div>
-        </div>
+        </section>
 
 
 
