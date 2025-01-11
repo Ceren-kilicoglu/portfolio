@@ -40,9 +40,9 @@ const Skills = () => {
                             <img
                                 src={logo.logo}
                                 alt={logo.name}
-                                className="w-[17vw] h-[17vw] sm:w-[90px] sm:h-[90px] md:w-[100px] md:h-[100px] lg:w-[110px] lg:h-[110px] object-cover"
+                                className="w-[17vw] h-[17vw] sm:w-[90px] sm:h-[90px] md:w-[100px] md:h-[100px] lg:w-[110px] lg:h-[110px] object-cover "
                             />
-                            <p className="uppercase text-[#777777] dark:text-whit text-[2.9vw] sm:text-[15px] md:text-[18px] lg:text-[18px] font-medium leading-[5vw] sm:leading-[36px] md:leading-[36px] lg:leading-[36px]">
+                            <p className="uppercase text-[#777777] dark:text-whit text-[2.9vw] sm:text-[15px] md:text-[18px] lg:text-[18px] font-medium leading-[5vw] sm:leading-[36px] md:leading-[36px] lg:leading-[36px] transition-transform duration-300 ease-in-out group-hover:scale-105">
                                 {logo.name}
                             </p>
                         </div>

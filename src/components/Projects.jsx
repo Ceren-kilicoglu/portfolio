@@ -40,7 +40,7 @@ const Projects = () => {
                 {state.projectsData.projects.map((project, index) => (
                     <div
                         key={index}
-                        className="project-card bg-whit dark:bg-[#2B2727] shadow-lg rounded-[12px] overflow-hidden w-full sm:w-[500px] md:w-[700px] md:h-[350px]  lg:w-[950px] lg:h-[350px] flex flex-col sm:flex-row items-start"
+                        className="project-card bg-whit dark:bg-[#2B2727] shadow-lg rounded-[12px] overflow-hidden w-full sm:w-[500px] md:w-[700px] md:h-[350px]  lg:w-[950px] lg:h-[350px] flex flex-col sm:flex-row items-start transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl "
                     >
                         {/* Resim */}
                         <img
@@ -72,7 +72,7 @@ const Projects = () => {
                                     href={project.viewSite}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="underline text-[#120B39] dark:text-yellw text-[14px] sm:text-[15px] md:text-[17px]"
+                                    className="underline text-[#120B39] dark:text-yellw text-[14px] sm:text-[15px] md:text-[17px] transition-all duration-300 hover:text-bl dark:hover:text-d-v hover:font-semibold hover:underline-offset-4"
                                 >
                                     View Site
                                 </a>
@@ -80,7 +80,7 @@ const Projects = () => {
                                     href={project.github}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="underline text-[#120B39] dark:text-yellw text-[14px] sm:text-[15px] md:text-[17px]"
+                                    className="underline text-[#120B39] dark:text-yellw text-[14px] sm:text-[15px] md:text-[17px] transition-all duration-300 hover:text-bl dark:hover:text-d-v hover:font-semibold hover:underline-offset-4"
                                 >
                                     Github
                                 </a>

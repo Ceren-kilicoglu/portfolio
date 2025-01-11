@@ -18,31 +18,29 @@
         },
         "aboutMe": {
             "title": "About Me",
-            "description": "Hello! 👋 I’m a frontend developer who loves creating user-friendly and visually appealing web experiences. During an intensive 3-month course at Workintech, I honed my skills in HTML, CSS, JavaScript, and React. I enjoy transforming ideas into user-centered interfaces and aim to contribute to projects that enhance user experiences. With a passion for continuous learning, I’m always eager to improve and explore new possibilities."
+            "description": "Hi there! 👋 I’m a frontend developer passionate about creating user-friendly and visually engaging web experiences. With expertise in HTML, CSS, JavaScript, and React, I transform ideas into functional and intuitive interfaces.My background in German studies and prior work experience have equipped me with excellent communication skills and a problem-solving mindset. These qualities help me approach design with a unique perspective, ensuring inclusivity and usability in every project I undertake.I’m a lifelong learner who loves exploring new technologies and improving my skills. My ultimate goal is to contribute to projects that not only enhance user experiences but also leave a lasting impact.Let’s connect and build something amazing together! 🚀"
         },
-        "image": "https://s3-alpha-sig.figma.com/img/ec36/93fd/2fc15cffc612b2448fb1f38e4c8c72fd?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lMpxhOHh~QaWLEokwuvZkAD4SCOU0RRkHKFjySjLzbVEAk6U0vcYbFUA7QCjvyIBnoKUECjjbHIEYpeKdpevvOj3bYkp2EZTQQvarPvx3Be3r7u4GtJO~XsTNSinpz6tp-W8Zxq9nBxJTNn5FWwuOBMhjJmfcR3c01AsR0~e3rmCn4hVvBE5fhgy0oRWML9ZNZo0Zu~OpVm5Yxlav-nP6Nx30CZB8WRXQ-DhYxGOZplbHXb49WSynuD4jggmKGxEy~PY-vojdrvopdqxBDlUzQuskUcSXxQlJDz4vgrei2oOL94zeKR32dVXZ6kZePY2CgS4WeYdNZUjxurOflvM~Q__"
-    },
-    "tr": {
-        "profile": {
-            "title": "Profil",
-            "subtitle": "Bilgiler",
-            "details": {
-                "birth": "25.02.1998",
-                "residence": "Antalya",
-                "education": "Akdeniz Üniversitesi, Germanistik, 2024",
-                "preferredRole": "Frontend, UI"
+        "tr": {
+            "profile": {
+                "title": "Profil",
+                "subtitle": "Bilgiler",
+                "details": {
+                    "birth": "25.02.1998",
+                    "residence": "Antalya",
+                    "education": "Akdeniz Üniversitesi, Germanistik, 2024",
+                    "preferredRole": "Frontend, UI"
+                },
+                "labels": {
+                    "birth": "Doğum Tarihi",
+                    "residence": "İkametgah",
+                    "education": "Eğitim ",
+                    "preferredRole": "Tercih Edilen Rol"
+                }
             },
-            "labels": {
-                "birth": "Doğum Tarihi",
-                "residence": "İkametgah",
-                "education": "Eğitim ",
-                "preferredRole": "Tercih Edilen Rol"
+            "aboutMe": {
+                "title": "Hakkımda",
+                "description": "Merhaba! 👋 Ben, kullanıcı dostu ve estetik web deneyimleri oluşturmayı tutkuyla seven bir frontend geliştiriciyim. Workintech’te tamamladığım 3 aylık yoğun kurs sürecinde, HTML, CSS, JavaScript ve React gibi modern teknolojilerde uzmanlaştım.Almanca eğitim geçmişim ve önceki iş tecrübelerim sayesinde güçlü bir iletişim becerisi ve çözüm odaklı bir bakış açısı geliştirdim. Bu deneyimler, tasarımlarımı daha kullanıcı dostu ve kapsayıcı hale getirmemde bana yardımcı oluyor.Fikirleri işlevsel ve görsel açıdan etkileyici arayüzlere dönüştürmekten büyük bir keyif alıyorum. Sürekli öğrenmeye olan tutkum, beni yeni teknolojileri keşfetmeye ve kendimi geliştirmeye motive ediyor. Hedefim, kullanıcı deneyimini en üst düzeye çıkaran projelerde yer alarak fark yaratmak.Eğer birlikte harika projeler geliştirmek isterseniz, benimle iletişime geçmekten çekinmeyin! 😊"
             }
-        },
-        "aboutMe": {
-            "title": "Hakkımda",
-            "description": "Merhaba! 👋 Kullanıcı dostu ve estetik web deneyimleri oluşturmayı seven bir frontend geliştiriciyim. Workintech'teki 3 aylık yoğun kurs sırasında HTML, CSS, JavaScript ve React teknolojilerinde uzmanlaştım. Fikirleri kullanıcı dostu arayüzlere dönüştürmekten keyif alıyor ve kullanıcı deneyimini geliştiren projelerde yer almayı hedefliyorum. Yeni şeyler öğrenmeye olan tutkumla kendimi sürekli geliştirmeye devam ediyorum."
-        },
-        "image": "https://s3-alpha-sig.figma.com/img/ec36/93fd/2fc15cffc612b2448fb1f38e4c8c72fd?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lMpxhOHh~QaWLEokwuvZkAD4SCOU0RRkHKFjySjLzbVEAk6U0vcYbFUA7QCjvyIBnoKUECjjbHIEYpeKdpevvOj3bYkp2EZTQQvarPvx3Be3r7u4GtJO~XsTNSinpz6tp-W8Zxq9nBxJTNn5FWwuOBMhjJmfcR3c01AsR0~e3rmCn4hVvBE5fhgy0oRWML9ZNZo0Zu~OpVm5Yxlav-nP6Nx30CZB8WRXQ-DhYxGOZplbHXb49WSynuD4jggmKGxEy~PY-vojdrvopdqxBDlUzQuskUcSXxQlJDz4vgrei2oOL94zeKR32dVXZ6kZePY2CgS4WeYdNZUjxurOflvM~Q__"
+        }
     }
 }

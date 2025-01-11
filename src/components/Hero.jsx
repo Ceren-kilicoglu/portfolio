@@ -29,7 +29,7 @@ const Hero = () => {
   }, [language]);
 
   if (!state.data) {
-    return <div>Loading...</div>;
+    return
   }
 
   const { profile, buttons, darkModeToggle } = state.data;
