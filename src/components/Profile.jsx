@@ -42,31 +42,31 @@ const Profile = () => {
                 <div className='profile-info flex flex-col lg:flex-row gap-8 lg:gap-16 w-full sm:w-[500px] md:w-[700px] lg:w-[960px] mx-auto'>
                     <div className='flex flex-col sm:flex-col md:flex-row lg:flex-row gap-8 lg:gap-16 w-full'>
                         <div className="w-full lg:w-1/3 ">
-                            <h2 className="text-whit font-semibold text-[22px] leading-[25px] sm:text-[25px] lg:text-[28px] lg:leading-[30px] mb-6">
+                            <h2 className="text-whit font-semibold text-[22px] leading-[25px] sm:text-[25px] lg:text-[28px] lg:leading-[30px] mb-9">
                                 {profile.subtitle}
                             </h2>
 
                             <div className="space-y-7">
                                 {/* Birth Information */}
-                                <div className="bg-gradient-to-r from-pink-300 to-purple-500 dark:from-blue-900 dark:to-purple-1000 p-4 rounded-tl-[30px] rounded-br-[30px] shadow-lg hover:scale-105 transition-all">
+                                <div className="bg-vio dark:bg-d-b p-3 rounded-[15px] shadow-lg hover:scale-105 transition-all">
                                     <p className="text-yellw font-semibold text-[16px] sm:text-[16px] md:text-[16px] lg:text-[18px] " >{profile.labels.birth}</p>
                                     <p className="text-whit font-semibold text-[14px] sm:text-[15px] md:text-[15px] lg:text-[15px]  mt-2">{profile.details.birth}</p>
                                 </div>
 
                                 {/* Residence */}
-                                <div className="bg-gradient-to-r from-rose-400 to-fuchsia-500 dark:from-green-800 to-blue-800 p-4 rounded-tl-[30px] rounded-br-[30px] shadow-lg hover:scale-105 transition-all">
+                                <div className="bg-vio dark:bg-d-b p-3 rounded-[15px] shadow-lg hover:scale-105 transition-all">
                                     <p className="text-yellw font-semibold text-[16px] sm:text-[16px] md:text-[16px] lg:text-[18px] ">{profile.labels.residence}</p>
                                     <p className="text-whit font-semibold text-[14px] sm:text-[15px] md:text-[15px] lg:text-[15px]  mt-2">{profile.details.residence}</p>
                                 </div>
 
                                 {/* Education */}
-                                <div className="bg-gradient-to-r from-orange-400 to-pink-400 dark:from-pink-800 to-red-900 p-4 rounded-tl-[30px] rounded-br-[30px] shadow-lg hover:scale-105 transition-all">
+                                <div className="bg-vio dark:bg-d-b p-3 rounded-[15px] shadow-lg hover:scale-105 transition-all">
                                     <p className="text-yellw font-semibold text-[16px] sm:text-[16px] md:text-[16px] lg:text-[18px] ">{profile.labels.education}</p>
                                     <p className="text-whit font-semibold text-[14px] sm:text-[16px] md:text-[15px] lg:text-[15px]  mt-2">{profile.details.education}</p>
                                 </div>
 
                                 {/* Preferred Role */}
-                                <div className="bg-gradient-to-r from-teal-500 to-cyan-500 dark:from-teal-800 to-green-900 p-4 rounded-tl-[30px] rounded-br-[30px] shadow-lg hover:scale-105 transition-all">
+                                <div className="bg-vio dark:bg-d-b p-3  rounded-[15px] shadow-lg hover:scale-105 transition-all">
                                     <p className="text-yellw font-semibold text-[16px] sm:text-[16px] md:text-[16px] lg:text-[18px] ">{profile.labels.preferredRole}</p>
                                     <p className="text-whit font-semibold text-[14px] sm:text-[14px] md:text-[15px] lg:text-[15px]  mt-2">{profile.details.preferredRole}</p>
                                 </div>
