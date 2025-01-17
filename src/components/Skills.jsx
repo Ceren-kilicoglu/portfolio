@@ -37,15 +37,20 @@ const Skills = () => {
                 <div className="grid grid-cols-2 gap-8 sm:gap-12  md:gap-14 w-full sm:w-[500px] md:w-[700px] lg:w-[832px] lg:ml-[0px]">
                     {state.data.logos.map((logo) => (
                         <div key={logo.id} className="flex items-center gap-[3vw] sm:gap-[3vw] md:gap-[3vw] lg:gap-6">
-                            <img
-                                src={logo.logo}
-                                alt={logo.name}
-                                className="w-[17vw] h-[17vw] sm:w-[90px] sm:h-[90px] md:w-[100px] md:h-[100px] lg:w-[110px] lg:h-[110px] object-cover "
-                            />
-                            <p className="uppercase text-[#777777] dark:text-whit text-[2.9vw] sm:text-[15px] md:text-[18px] lg:text-[18px] font-medium leading-[5vw] sm:leading-[36px] md:leading-[36px] lg:leading-[36px] transition-transform duration-300 ease-in-out group-hover:scale-105">
+                            <div className="relative overflow-hidden">
+                                <img
+                                    src={logo.logo}
+                                    alt={logo.name}
+                                    className="w-[17vw] h-[17vw] sm:w-[90px] sm:h-[90px] md:w-[100px] md:h-[100px] lg:w-[110px] lg:h-[110px] object-cover transition-transform duration-300 ease-in-out hover:scale-105"
+
+                                />
+                            </div>
+                            <p className="uppercase text-[#777777] dark:text-white text-[2.9vw] sm:text-[15px] md:text-[18px] lg:text-[18px] font-medium leading-[5vw] sm:leading-[36px] md:leading-[36px] lg:leading-[36px]">
                                 {logo.name}
                             </p>
                         </div>
+
+
                     ))}
                 </div>
             </div>
